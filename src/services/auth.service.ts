@@ -11,6 +11,7 @@ export const getSpotifyAuthURL = () => {
         client_id: SPOTIFY_CLIENT_ID,
         scope,
         redirect_uri: SPOTIFY_REDIRECT_URI,
+        show_dialog: true,
     });
     return `https://accounts.spotify.com/authorize?${params}`;
 };
